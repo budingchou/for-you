@@ -1,0 +1,5 @@
+mkdir -p img
+cp ~/桌面/a9285937e2763cffb19e9b24b1d2664.png img/
+# 添加文件
+git add happy-birthday/img/a9285937e2763cffb19e9b24b1d2664.png
+
