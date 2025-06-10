@@ -301,6 +301,25 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
+let isPaused = false;
+
+// 获取所有活跃的 GSAP 动画
+function toggleGSAPAnimations() {
+  const animations = TweenMax.getAllTweens();
+  if (isPaused) {
+    animations.forEach(t => t.resume());
+  } else {
+    animations.forEach(t => t.pause());
+  }
+  isPaused = !isPaused;
+}
+
+// 鼠标左键点击事件
+document.addEventListener('mousedown', function (e) {
+  if (e.button === 0) { // 左键
+    toggleGSAPAnimations();
+  }
+});
 
 // Run fetch and animation in sequence
 fetchData();
