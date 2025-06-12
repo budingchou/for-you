@@ -1,14 +1,14 @@
 {
   "greeting": "你一定没想到这种方式吧",
-  "name": "宝",
-  "greetingText": "我一开始也没有想到，但最害怕就是脑袋突然灵光一闪，想到了",
+  "name": "小宝",
+  "greetingText": "我一开始也没有想到，但最怕就是……脑袋突然灵光一闪，想到了",
   "wishText": "May the js.prototypes always be with you! ;)",
   "imagePath": "img/lydia2.png",
-  "text1": "有没有觉得很惊喜呀",
+  "text1": "是不是有点小惊喜",
   "textInChatBox": "肖正隆！！！祝你生日快乐！！！天天快乐！！！",
   "sendButtonLabel": "Send",
   "text2": "我不知道要送什么给你",
-  "text3": "因为我不喜欢庸俗",
+  "text3": "我不喜欢庸俗",
   "text4": "我总是想要送你最特别的给你",
   "text4Adjective": "最特别的",
   "text5Entry": "因为",
@@ -18,6 +18,6 @@
   "bigTextPart2": "O",
   "wishHeading": "生日快乐！！！",
   "outroText": "喜欢么？",
-  "replayText": "亦或者要重新看一遍",
+  "replayText": "如果这一切你都喜欢……那你一定也会喜欢我接下来送给你的东西",
   "outroSmiley": ":)"
 }
