@@ -125,6 +125,38 @@
       <p class="last-smile" data-node-name="outroSmiley">:)</p>
     </div>
   </div>
+  <!-- Music Player -->
+<div id="music-player" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <button onclick="toggleMusic()" id="music-btn" style="padding: 6px 12px; font-size: 14px; border-radius: 8px; background: #eee; border: none; cursor: pointer;">
+    ⏸ Pause Music
+  </button>
+  <audio id="bg-music" autoplay loop>
+    <source src="img/your-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '⏸ Pause Music';
+    } else {
+      music.pause();
+      btn.textContent = '▶️ Play Music';
+    }
+  }
+
+  // Attempt to auto-play when user interacts (for browser policies)
+  window.addEventListener('click', function onceUserInteracts() {
+    music.play().catch(() => {}); // Silent fail
+    window.removeEventListener('click', onceUserInteracts);
+  });
+</script>
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
